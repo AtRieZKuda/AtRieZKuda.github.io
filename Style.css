@@ -64,6 +64,10 @@ clear: both;
       height: 700px;
   }
 
+  body {
+    zoom: 2;
+  }
+
 }
 
 .horizontal-text-container {
