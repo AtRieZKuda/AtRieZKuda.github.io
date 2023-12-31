@@ -18,36 +18,12 @@ body {font-family: 'IBM Plex Mono', monospace;
 
 .column {float: left;
     width: 25%;
-    height: 715px;}
-
-header, body, .content, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-content, .dropdown-content a {
-    font-size: 18px; 
+    height: 715px;
 }
 
-@media screen and (max-width: 1200px) {
-    header, body, .content, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-content, .dropdown-content a {
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    header, body, .content, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-content, .dropdown-content a {
-        font-size: 14px; 
-    }
-
-    .column {
-        width: 100%;
-        height: auto; 
-    }
-
-    canvas {
-        width: 100%;
-        height: auto;
-    }
-}
 
 .myButton {
-    background-color: #4CAF50; 
+    background-color: #4CAF50;
     border: none;
     color: white;
     text-align: center;
@@ -71,6 +47,33 @@ header, body, .content, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-
   content: "";
   display: table;
   clear: both;
+}
+
+header, body, .content, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-content, .dropdown-content a {
+    font-size: 17px;
+}
+
+@media screen and (max-width: 1200px) {
+    header, body, .content, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-content, .dropdown-content a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header, body, .content, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-content, .dropdown-content a {
+        font-size: 14px;
+    }
+
+    .column {
+        width: 100%;
+        height: auto;
+    }
+
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+}
 
 .horizontal-text-container {
     position: relative;
@@ -97,7 +100,7 @@ header, body, .content, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-
 }
 
 #gameOfLifeContainer {
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 footer {font-family: 'IBM Plex Mono', monospace;
