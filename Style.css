@@ -21,6 +21,13 @@ body {font-family: 'IBM Plex Mono', monospace;
     height: 715px;
 }
 
+@media screen and (max-width: 600px) {
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .myButton {
     background-color: #4CAF50; /* Green */
     border: none;
