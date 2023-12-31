@@ -4,7 +4,7 @@ let play = false;
 
 function setup() {
   let container = document.getElementById('GOLContainer');
-  let canvas = createCanvas(container.offsetWidth-10, container.offsetHeight/3);
+  let canvas = createCanvas(container.offsetWidth-10, 210);
 
   cols = floor(width / n);
   rows = floor(height / n);
@@ -85,4 +85,3 @@ function generate() {
     }
   }
 }
-
