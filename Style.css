@@ -63,11 +63,6 @@ clear: both;
       width: 100%;
       height: 700px;
   }
-  
-  body {
-    zoom: 2;
-  }
-
 }
 
 .horizontal-text-container {
