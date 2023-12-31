@@ -1,0 +1,132 @@
+header {font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+
+    color: #fff;
+    background-color: #000;}
+
+body {font-family: 'IBM Plex Mono', monospace;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    color: #fff;
+    background-color: #000;}
+
+.content {padding: 5px}
+
+.column {float: left;
+    width: 25%;
+    height: 715px;
+}
+
+.myButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    width: 230px;
+    height: 37.5px;
+}
+
+.buttonHover {
+    background-color: #45a049; /* Darker Green */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;}}
+
+.horizontal-text-container {
+    position: relative;
+    overflow: hidden;}
+
+.horizontal-text {
+    opacity: 0;
+    animation: flyIn 2s ease-out forwards;}
+
+@keyframes flyIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.flying-text {
+    position: relative;
+    white-space: nowrap;
+    animation: slideAcross 20s linear finite;
+}
+
+@keyframes slideAcross {
+    0% {left: 100%;}
+    100% {left: -100%;}
+}
+
+#gameOfLifeContainer {
+  margin: 0 auto; /* Add this line to center the canvas */
+}
+
+footer {font-family: 'IBM Plex Mono', monospace;
+    border-top: 2px solid #e74c3c;
+    margin-top: auto;
+
+    color: #fff;
+    background-color: #000;}
+
+.admin {font-family: 'IBM Plex Mono', monospace;
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;}
+
+.dropbtn {font-family: 'IBM Plex Mono', monospace;
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;}
+
+.dropdown {font-family: 'IBM Plex Mono', monospace;
+  position: relative;
+  display: inline-block;}
+
+.dropdown-content {font-family: 'IBM Plex Mono', monospace;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;}
+
+.dropdown-content a {font-family: 'IBM Plex Mono', monospace;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;}
+
+.dropdown-content a:hover {font-family: 'IBM Plex Mono', monospace;
+    background-color:#363636;}
+
+.dropdown:hover .dropdown-content {display: block;
+    background-color:#363636;}
+
+.dropdown:hover .dropbtn {background-color: transparent}
+
+
+
+
+
+
