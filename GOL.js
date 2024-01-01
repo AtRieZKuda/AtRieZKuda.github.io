@@ -20,14 +20,14 @@ function setup() {
 
   const onOffButton = createButton('ON / OFF');
   onOffButton.mousePressed(() => play = !play);
-  onOffButton.class('myButton');
+  onOffButton.class('interactButtons');
   onOffButton.mouseOver(() => onOffButton.addClass('buttonHover'));
   onOffButton.mouseOut(() => onOffButton.removeClass('buttonHover'));
   onOffButton.parent(buttonContainer);
 
   const randomPatternButton = createButton('Random Pattern');
   randomPatternButton.mousePressed(initRandomGrid);
-  randomPatternButton.class('myButton');
+  randomPatternButton.class('interactButtons');
   randomPatternButton.mouseOver(() => randomPatternButton.addClass('buttonHover'));
   randomPatternButton.mouseOut(() => randomPatternButton.removeClass('buttonHover'));
   randomPatternButton.parent(buttonContainer);}
