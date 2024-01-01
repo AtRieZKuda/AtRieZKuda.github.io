@@ -1,10 +1,10 @@
-let n = 10;
+let n = 9;
 let cols, rows, board, next;
 let play = false;
 
 function setup() {
   let container = document.getElementById('GOLContainer');
-  let canvas = createCanvas(container.offsetWidth-10, 210);
+  let canvas = createCanvas(container.offsetWidth-10, 200);
 
   cols = floor(width / n);
   rows = floor(height / n);
@@ -14,21 +14,27 @@ function setup() {
   initGrid();
   initGun();
 
+  const buttonContainer = createDiv();
+  buttonContainer.class('buttonContainer');
+  buttonContainer.parent(container);
+
   const onOffButton = createButton('ON / OFF');
   onOffButton.mousePressed(() => play = !play);
-  onOffButton.parent(container);
-  onOffButton.style('padding', '10px');
   onOffButton.class('myButton');
   onOffButton.mouseOver(() => onOffButton.addClass('buttonHover'));
   onOffButton.mouseOut(() => onOffButton.removeClass('buttonHover'));
+  onOffButton.parent(buttonContainer);
 
   const randomPatternButton = createButton('Random Pattern');
   randomPatternButton.mousePressed(initRandomGrid);
-  randomPatternButton.parent(container);
-  randomPatternButton.style('padding', '10px');
   randomPatternButton.class('myButton');
   randomPatternButton.mouseOver(() => randomPatternButton.addClass('buttonHover'));
-  randomPatternButton.mouseOut(() => randomPatternButton.removeClass('buttonHover'));}
+  randomPatternButton.mouseOut(() => randomPatternButton.removeClass('buttonHover'));
+  randomPatternButton.parent(buttonContainer);}
+
+  let canvasX = (container.offsetWidth - width) / 2;
+  let canvasY = (container.offsetHeight - height) / 2;
+  canvas.position(canvasX, canvasY);
 
 function draw() {
   background(0);
