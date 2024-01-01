@@ -1,0 +1,162 @@
+* {font-family: 'IBM Plex Mono', monospace;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none
+}
+
+header, body, footer {
+  background-color: black
+}
+
+header, .interactButtons {
+  text-align: center
+}
+
+.buttonSpacingLeft, .buttonSpacingRight{
+  position: absolute;
+  padding: 15px;
+  top: 0;
+}
+
+body, .horizontal-text-container {
+  overflow-x: hidden
+}
+
+.interactButtons, .dropdown-content a {
+  text-decoration: none
+}
+
+.admin, .dropbtn {
+  background-color: transparent;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+header {
+  border-bottom: 2px solid dodgerblue
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  height: 700px;
+}
+
+.interactButtons {
+  background-color: green;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  width: 150px;
+  height: 37.5px;
+}
+
+.interactButtons:hover {
+  background-color: darkgreen;
+}
+
+#GOLContainer {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  height: 70vh;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.horizontal-text {
+  animation: flyIn 2s ease-out forwards
+}
+
+@keyframes flyIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+#partitioning {
+  position: relative;
+  min-height: 90vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+footer {
+  border-top: 2px solid red;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.admin {
+  cursor: pointer
+}
+
+.buttonSpacingLeft {
+  left: 0
+}
+
+.buttonSpacingRight {
+  right: 0
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  min-width: 160px;
+  position: absolute;
+}
+
+.dropdown-content a {
+  padding: 4px 4px;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color:darkgrey;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color:gray;}
+
+.dropdown:hover .dropbtn {
+  background-color: transparent
+}
+
+@media only screen and (max-width: 1600px) {
+  header, body, .content, #GOLContainer, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-content, .dropdown-content a {
+      font-size: 16px;}
+  #GOLContainer {
+      height: 100vh;}
+  .column {
+      height: 850px;}
+}
+
+@media only screen and (max-width: 736px) {
+  header, body, .content, #GOLContainer, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-content, .dropdown-content a {
+     font-size: 12px;}
+  #GOLContainer {
+      height: 100vh;}
+  .column {
+      width: 100%;}
+}
