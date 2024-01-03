@@ -152,9 +152,11 @@ footer {
 /* PHONE SCALING | Alter. */
 @media only screen and (max-width: 736px) {
   header, body, .content, #GOLContainer, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-content, .dropdown-content a {
-     font-size: 12px;}
+     font-size: 14px;}
   #GOLContainer {
-      height: 100vh;}
+      height: auto;}
   .column {
-      width: 100%;}
+      width: 100%;
+      float: none;
+      height: auto;}
 }
