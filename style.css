@@ -1,56 +1,53 @@
+/* All element attributes */
 * {font-family: 'IBM Plex Mono', monospace;
   color: white;
 }
-
+/* Removal of scrollbar */
 ::-webkit-scrollbar {
   display: none
 }
-
+/* Make aspects of website black */
 header, body, footer {
   background-color: black
 }
-
+/* Element centering */
 header, .interactButtons {
   text-align: center
 }
-
+/* Header button positioning */
 .buttonSpacingLeft, .buttonSpacingRight{
   position: absolute;
   padding: 15px;
   top: 0;
 }
-
-body, .horizontal-text-container {
-  overflow-x: hidden
-}
-
+/* Remove underlining of URLs */
 .interactButtons, .dropdown-content a {
   text-decoration: none
 }
-
+/* Fixing button decor */
 .admin, .dropbtn {
   background-color: transparent;
   padding: 16px;
   font-size: 16px;
   border: none;
 }
-
+/* Header border */
 header {
   border-bottom: 2px solid dodgerblue
 }
-
+/* Body sect between header & footer */
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
-
+/* Column formatting */
 .column {
   float: left;
   width: 25%;
   height: 700px;
 }
-
+/* Button design game running */
 .interactButtons {
   background-color: green;
   cursor: pointer;
@@ -61,37 +58,36 @@ body {
   width: 150px;
   height: 37.5px;
 }
-
+/* Colour change when hover */
 .interactButtons:hover {
   background-color: darkgreen;
 }
-
+/* GOL container - display */
 #GOLContainer {
   flex-direction: column;
   align-items: center;
   display: flex;
   height: 70vh;
 }
-
+/* Button spacing for running */
 .buttonContainer {
   display: flex;
   gap: 10px;
 }
-
+/* Professional slide in text */
 .horizontal-text {
   animation: flyIn 2s ease-out forwards
 }
-
 @keyframes flyIn {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
-
+/* Body partioning */
 #partitioning {
   position: relative;
   min-height: 90vh;
 }
-
+/* Spacing between footer */
 #content-wrap {
   padding-bottom: 2.5rem;
 }
@@ -104,45 +100,46 @@ footer {
   height: 2.5rem;
 }
 
+/* Change cursor over button */
 .admin {
   cursor: pointer
 }
-
+/* Header button spacing left */
 .buttonSpacingLeft {
   left: 0
 }
-
+/* Header button spacing right */
 .buttonSpacingRight {
   right: 0
 }
-
+/* Menu dropdown design */
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
+/* Drop down content designing */
 .dropdown-content {
   display: none;
   min-width: 160px;
   position: absolute;
 }
-
 .dropdown-content a {
   padding: 4px 4px;
   display: block;
 }
-
+/* Hover colour */
 .dropdown-content a:hover {
   background-color:darkgrey;}
-
+/* Dropdown content button colour */
 .dropdown:hover .dropdown-content {
   display: block;
   background-color:gray;}
-
+/* Menu button colour */
 .dropdown:hover .dropbtn {
   background-color: transparent
 }
 
+/* LAPTOP SCALING */
 @media only screen and (max-width: 1600px) {
   header, body, .content, #GOLContainer, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-content, .dropdown-content a {
       font-size: 16px;}
@@ -152,6 +149,7 @@ footer {
       height: 850px;}
 }
 
+/* PHONE SCALING | Alter. */
 @media only screen and (max-width: 736px) {
   header, body, .content, #GOLContainer, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-content, .dropdown-content a {
      font-size: 12px;}
