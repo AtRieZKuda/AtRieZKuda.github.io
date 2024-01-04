@@ -155,7 +155,7 @@ footer {
   header, body, .content, #GOLContainer, #BEZContainer, #AStarContainer, #TSPContainer, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-content, .dropdown-content a {
     font-size: 14px;}
   #GOLContainer, #BEZContainer, #AStarContainer, #TSPContainer {
-    height: 90vh;}
+    height: 110vh;}
   .column {
     width: 100%;
     float: none;
