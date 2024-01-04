@@ -70,20 +70,6 @@ body {
 .interactButtons:hover {
   background-color: darkgreen;
 }
-/* GOL container - display */
-#GOLContainer {
-  flex-direction: column;
-  align-items: center;
-  display: flex;
-  height: 70vh;
-}
-/* Bezier curve */
-#BEZContainer {
-  flex-direction: column;
-  align-items: center;
-  display: flex;
-  height: 70vh;
-}
 /* Button spacing for running */
 .buttonContainer {
   display: flex;
@@ -156,22 +142,20 @@ footer {
 
 /* LAPTOP SCALING */
 @media only screen and (max-width: 1600px) {
-  header, body, .content, #GOLContainer, #BEZContainer, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-content, .dropdown-content a {
+  header, body, .content, #GOLContainer, #BEZContainer, #AStarContainer, #TSPContainer, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-content, .dropdown-content a {
       font-size: 16px;}
-  #GOLContainer {
-      height: 100vh;}
-  #BEZContainer {
+  #GOLContainer, #BEZContainer, #AStarContainer, #TSPContainer {
     height: 100vh;}
   .column {
       height: 850px;}
 }
 
-/* PHONE SCALING | Alter. */
+/* PHONE SCALING */
 @media only screen and (max-width: 736px) {
   header, body, .content, #GOLContainer, #BEZContainer, #AStarContainer, #TSPContainer, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-content, .dropdown-content a {
     font-size: 14px;}
   #GOLContainer, #BEZContainer, #AStarContainer, #TSPContainer {
-    height: 60vh;}
+    height: 67.5vh;}
   .column {
     width: 100%;
     float: none;
