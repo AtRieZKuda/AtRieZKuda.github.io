@@ -12,6 +12,8 @@
     <script src="GOL.js" defer></script>
     <!-- p5.js linkages -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <!-- MathJax linkages -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <!-- meta -->
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
@@ -63,13 +65,19 @@
           <section class="column" id="BEZContainer">
             <h2>B<kbd>&#233</kbd>zier Curves | In Dev.</h2>
             <p>
-              Commonly used in computer graphics and design, get their shape from specific control points. 
-              These curves are great for making smooth and precise shapes, and even in designing racing tracks where they're carefully used to make the driving experience challenging yet enjoyable.
-              <br></br>
-              <br><b>De Casteljau's algorithm</b></br>
-              A way to figure out points on Bézier curves. 
-              It uses a step-by-step geometric approach, breaking down the process of finding points into smaller, manageable steps. 
-              It helps us see how Bézier curves are built, moving bit by bit from one set of control points to the next.
+              Frequently employed in <b>computer graphics</b> & <b>design</b>, derive their shapes from designated <b>control points</b>.
+              They are particularly advantageous for crafting <b>smooth</b> & <b>precise</b> shapes.
+              <br><b>Ex.</b> designing racing tracks to make the driving experience challenging yet completable.<br>
+              <br><b>De Casteljau's algorithm</b>
+              <br>- Method to figure out points on B<kbd>&#233</kbd>zier curves
+              <br>&nbsp;&nbsp;- via step-by-step geometric approach, breaking down the process of finding points into smaller, manageable steps.
+              <br>- Helps visulise how B<kbd>&#233</kbd>zier curves are built, moving partially from one set of control points to the next.
+              <br>
+              <br> General function for <b>B<kbd>&#233</kbd>zier Curves</b>
+              <br>Essentially, a sum of every combination of (1-t) and t:
+              \[
+              B(t) = \sum_{i=0}^{n} \binom{n}{i} (1 - t)^{n - i} t^i P_i
+              \]
             </p>
           </section>
         <!-- A* Search Algorithm -->
