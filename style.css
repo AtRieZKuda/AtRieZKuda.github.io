@@ -20,6 +20,13 @@ header, .interactButtons {
   padding: 15px;
   top: 0;
 }
+/* All game containers */
+#GOLContainer, #BEZContainer, #AStarContainer, #TSPContainer  {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  height: 70vh;
+}
 /* Remove underlining of URLs */
 .interactButtons, .dropdown-content a {
   text-decoration: none
@@ -161,14 +168,15 @@ footer {
 
 /* PHONE SCALING | Alter. */
 @media only screen and (max-width: 736px) {
-  header, body, .content, #GOLContainer, #BEZContainer, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-content, .dropdown-content a {
-     font-size: 14px;}
-  #GOLContainer {
-      height: auto;}
-  #BEZContainer {
-    height: auto;}
+  header, body, .content, #GOLContainer, #BEZContainer, #AStarContainer, #TSPContainer, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-content, .dropdown-content a {
+    font-size: 14px;}
+  #GOLContainer, #BEZContainer, #AStarContainer, #TSPContainer {
+    height: 60vh;}
   .column {
-      width: 100%;
-      float: none;
-      height: auto;}
+    width: 100%;
+    float: none;
+    height: auto;
+    border-bottom: 2px solid orange;
+    padding-bottom: 10px; 
+    margin: 10px;}
 }
