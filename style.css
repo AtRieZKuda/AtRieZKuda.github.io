@@ -142,10 +142,10 @@ footer {
 
 /* LAPTOP SCALING */
 @media only screen and (max-width: 1600px) {
-  header, body, .content, #GOLContainer, #BEZContainer, #AStarContainer, #TSPContainer, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-content, .dropdown-content a {
+  header, body, .content, #GOLContainer, .buttonContainer, #BEZContainer, #AStarContainer, #TSPContainer, .column, footer, .admin, .dropbtn, .dropdown, .dropdown-content, .dropdown-content a {
       font-size: 16px;}
   #GOLContainer, #BEZContainer, #AStarContainer, #TSPContainer {
-    height: 100vh;}
+    height: 110vh;}
   .column {
       height: 850px;}
 }
@@ -161,6 +161,6 @@ footer {
     float: none;
     height: auto;
     border-bottom: 2px solid orange;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
     margin: 10px;}
 }
